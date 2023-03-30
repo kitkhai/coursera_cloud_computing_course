@@ -15,13 +15,13 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        make install
+        make -C Cloud_Computing_Foundations install
     - name: Lint with pylint
       run: |
-        make lint
+        make -C Cloud_Computing_Foundations lint
     - name: Test with pytest
       run: |
-        make test
+        make -C Cloud_Computing_Foundations test
     - name: Format code
       run: |
-        make format
+        make -C Cloud_Computing_Foundations format
